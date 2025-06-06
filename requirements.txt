@@ -1,0 +1,27 @@
+# Dependencias del proyecto BOG_SINTE - Versión Corregida
+# Instalar con: pip install -r requirements.txt
+
+# Dependencias básicas (obligatorias)
+pandas>=1.3.0
+numpy>=1.20.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+
+# Dependencias opcionales para funcionalidades avanzadas
+# Descomenta las que necesites:
+
+# plotly>=5.0.0          # Para gráficos interactivos (puede causar problemas en notebooks)
+folium>=0.12.0           # Para mapas interactivos (RECOMENDADO)  
+# geopandas>=0.9.0       # Para análisis geoespacial (requiere dependencias complejas)
+# geopy>=2.1.0           # Para cálculos de distancia geográfica
+# scikit-learn>=1.0.0    # Para clustering y machine learning
+
+# Jupyter y notebooks (solo si se van a usar)
+# jupyter>=1.0.0
+# ipython>=7.0.0
+# nbformat>=5.0.0        # Corrige problemas con Plotly en notebooks
+
+# Dependencias de desarrollo
+# pytest>=6.0.0         # Para testing
+# black>=21.0.0          # Para formateo de código
+# flake8>=3.8.0          # Para linting

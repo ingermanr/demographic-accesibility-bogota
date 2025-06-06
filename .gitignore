@@ -1,0 +1,427 @@
+# =============================================================================
+# .gitignore para BOG_SINTE - Sistema de Datos Sintéticos de Bogotá
+# =============================================================================
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
+#  project, it is unlikely you want to ignore these files since they store project
+#  configurations. Uncomment if you want to ignore them.
+#.idea/
+
+# =============================================================================
+# DATOS Y RESULTADOS - BOG_SINTE ESPECÍFICO
+# =============================================================================
+
+# Archivos de resultados generados automáticamente
+resultados_analisis_bogota/*.csv
+resultados_analisis_bogota/*.json
+resultados_analisis_bogota/*.png
+resultados_analisis_bogota/*.txt
+resultados_analisis_bogota/*.html
+
+# Mantener la estructura del directorio pero no los archivos
+!resultados_analisis_bogota/
+!resultados_analisis_bogota/.gitkeep
+
+# Mapas HTML generados (se regeneran automáticamente)
+mapa_*.html
+*_datos.csv
+
+# Archivos de datos de muestra grandes (opcional)
+# Descomenta si quieres excluir archivos CSV grandes
+# *.csv
+# !centros_salud.csv  # Mantener el archivo de centros base
+
+# Archivos de población sintética grandes
+poblacion_sintetica_*.csv
+poblacion_sintetica_*.json
+
+# Archivos de análisis temporales
+analisis_*.csv
+analisis_*.png
+centros_salud_procesados.csv
+
+# =============================================================================
+# ENTORNOS VIRTUALES Y DEPENDENCIAS
+# =============================================================================
+
+# Directorio de entorno virtual (si está en el proyecto)
+sin_env/
+venv/
+env/
+.venv/
+.env/
+
+# Archivos de configuración de entorno
+.env.local
+.env.development
+.env.test
+.env.production
+
+# =============================================================================
+# DATOS SENSIBLES Y CONFIGURACIÓN
+# =============================================================================
+
+# Archivos de configuración con datos sensibles
+config.ini
+config.json
+secrets.json
+.secrets/
+
+# Llaves API y tokens
+*.key
+*.pem
+.api_keys
+
+# Credenciales de base de datos
+database.db
+*.sqlite
+*.db
+
+# =============================================================================
+# ARCHIVOS TEMPORALES Y SISTEMA
+# =============================================================================
+
+# Archivos temporales del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos temporales de Windows
+*.tmp
+*.temp
+~$*
+
+# Archivos de log específicos del proyecto
+*.log
+logs/
+debug.log
+error.log
+
+# Archivos de backup
+*.bak
+*.backup
+*~
+
+# =============================================================================
+# EDITORES Y IDEs
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# DOCUMENTACIÓN Y REPORTES
+# =============================================================================
+
+# Archivos de documentación generados
+docs/build/
+docs/_build/
+
+# Reportes y análisis temporales
+reporte_*.txt
+reporte_*.pdf
+analisis_temp_*
+temp_*
+
+# =============================================================================
+# MACHINE LEARNING Y ANÁLISIS
+# =============================================================================
+
+# Modelos entrenados
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+
+# Datasets grandes
+*.parquet
+large_dataset_*
+
+# Notebooks temporales
+*-checkpoint.ipynb
+.ipynb_checkpoints/
+
+# =============================================================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO BOG_SINTE
+# =============================================================================
+
+# Archivos de debug y diagnóstico
+diagnostico_*.py
+test_temp_*.py
+debug_*.py
+
+# Archivos de migración y limpieza
+archivos_eliminados_*.log
+migracion_*.log
+
+# Versiones antiguas de archivos
+*_old.py
+*_backup.py
+*_v[0-9].py
+*_deprecated.py
+
+# Archivos de prueba específicos
+test_manual_*.py
+prueba_personal_*.py
+
+# =============================================================================
+# DEPLOYMENT Y PRODUCCIÓN
+# =============================================================================
+
+# Archivos de configuración de servidor
+docker-compose.override.yml
+.dockerignore
+
+# Archivos de deployment
+deploy.sh
+deploy.bat
+.deploy/
+
+# Variables de entorno de producción
+.env.production.local
+
+# =============================================================================
+# ARCHIVOS PERSONALES Y LOCALES
+# =============================================================================
+
+# Notas personales
+notas.txt
+TODO.txt
+PERSONAL.md
+mis_notas.*
+
+# Configuraciones locales específicas del desarrollador
+local_config.*
+mi_config.*
+
+# =============================================================================
+# COMENTARIOS Y EJEMPLOS
+# =============================================================================
+
+# Para incluir un archivo específico que normalmente sería ignorado:
+# !importante.log
+
+# Para ignorar todo excepto ciertos archivos en un directorio:
+# directorio/*
+# !directorio/importante.txt
+
+# Para ignorar archivos con patrones específicos:
+# **/temp_files/
+# **/*.log
+
+# =============================================================================
+# ARCHIVOS QUE SIEMPRE SE DEBEN INCLUIR (IMPORTANTES)
+# =============================================================================
+
+# Asegurar que estos archivos SIEMPRE se incluyan
+!README.md
+!README_*.md
+!requirements.txt
+!centros_salud.csv
+!.gitignore
+!main_corregido.py
+!generador_datos_sinteticos_bogota.py
+!validador_datos_sinteticos.py
+!analizador_centros_salud.py
+
+# =============================================================================
+# FIN DEL ARCHIVO .gitignore
+# =============================================================================
